@@ -78,7 +78,7 @@ pub unsafe extern fn isr_handler_wrapper() {
 }  
 
 #[allow(non_upper_case_globals)]
-const ISRCount: uint = 16;
+const ISRCount: usize = 16;
 
 #[link_section=".isr_vector"]
 #[allow(non_upper_case_globals)]
